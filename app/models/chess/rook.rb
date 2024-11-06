@@ -24,6 +24,8 @@ module Chess
       (start_y..end_y).each do |position|
         return false if @board[position][start_y].present? && position != end_y
       end
+
+      true
     end
   end
 end
