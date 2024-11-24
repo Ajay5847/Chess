@@ -19,6 +19,9 @@ services:
     environment:
       - RAILS_ENV=development
       - RAILS_MAX_THREADS=5
+      - DATABASE_HOST=db
+      - DATABASE_USERNAME=postgres
+      - DATABASE_PASSWORD=ajaykumar
     volumes:
       - app-storage:/rails/storage
     depends_on:

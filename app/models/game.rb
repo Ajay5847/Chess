@@ -1,6 +1,4 @@
 class Game < ApplicationRecord
-  serialize :board_state, Array
-
   enum :status, {
     pending:    0,
     started:    1,
